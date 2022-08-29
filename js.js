@@ -4,37 +4,49 @@ function rado() {
   console.log(5);
 }
 
-//aby sme nemusli vzdy zadavat novo ciselka tak stalcis random button, kt. by si mohol vytvorit a niekde ho pekne vlozit :D 
-function randomarr(){  
+let vstup = document.get;
+
+//aby sme nemusli vzdy zadavat novo ciselka tak stalcis random button, kt. by si mohol vytvorit a niekde ho pekne vlozit :D
+function randomarr() {
   let zero = [];
-zero[0] = document.querySelector("#val_0_");
-zero[1] = document.querySelector("#val_1_");
-zero[2] = document.querySelector("#val_2_");
-zero[3] = document.querySelector("#val_3_");
-zero[4] = document.querySelector("#val_4_");
-zero[5] = document.querySelector("#val_5_");
-zero[6] = document.querySelector("#val_6_");
-zero[7] = document.querySelector("#val_7_");
-zero[8] = document.querySelector("#val_8_");
-zero[9] = document.querySelector("#val_9_");
-  let newarr = [];   
-  while(newarr.length < 10){
-      let r = Math.floor(Math.random() * 1000) + 1;
-      if(newarr.indexOf(r) === -1) newarr.push(r);
+  // zero[0] = document.querySelector("#val_0_");
+  // zero[1] = document.querySelector("#val_1_");
+  // zero[2] = document.querySelector("#val_2_");
+  // zero[3] = document.querySelector("#val_3_");
+  // zero[4] = document.querySelector("#val_4_");
+  // zero[5] = document.querySelector("#val_5_");
+  // zero[6] = document.querySelector("#val_6_");
+  // zero[7] = document.querySelector("#val_7_");
+  // zero[8] = document.querySelector("#val_8_");
+  // zero[9] = document.querySelector("#val_9_");
+  let newarr = [];
+  while (newarr.length < 10) {
+    let r = Math.floor(Math.random() * 1000) + 1;
+    if (newarr.indexOf(r) === -1) newarr.push(r);
   }
   //input = newarr;
   //console.log(newarr);
   //console.log(input);
   // for (let i = 0; i < 10; i++){
   //   document.getElementById("val_" + i + "_").value = input[i];
-  // } 
+  // }
 
-for(let i = 0; i < 10; i++){
-  zero[i] = newarr[i];
+  for (let i = 0; i < 10; i++) {
+    zero[i] = newarr[i];
+  }
+  document.querySelector("#val_0_").value = newarr[0];
+  document.querySelector("#val_1_").value = newarr[1];
+  document.querySelector("#val_2_").value = newarr[2];
+  document.querySelector("#val_3_").value = newarr[3];
+  document.querySelector("#val_4_").value = newarr[4];
+  document.querySelector("#val_5_").value = newarr[5];
+  document.querySelector("#val_6_").value = newarr[6];
+  document.querySelector("#val_7_").value = newarr[7];
+  document.querySelector("#val_8_").value = newarr[8];
+  document.querySelector("#val_9_").value = newarr[9];
+  console.log(zero);
+  return newarr;
 }
-console.log(zero);
-  return newarr;  
-}  
 
 let k = "The respective values are :";
 let input = document.querySelectorAll(".input--num");
@@ -59,7 +71,7 @@ function min() {
       min = parseFloat(input[i].value);
     }
   }
-    // fuj document.querySelector(".min").textContent = min;
+  // fuj document.querySelector(".min").textContent = min;
   return min;
 }
 
@@ -70,7 +82,7 @@ function max() {
       max = parseFloat(input[i].value);
     }
   }
-    // fuj document.querySelector(".max").textContent = max;
+  // fuj document.querySelector(".max").textContent = max;
   return max;
 }
 
@@ -95,9 +107,13 @@ function avg() {
 //!!! Vlozil som to do kazdej funkcie aby to zapisovalo, pozri pri kazdej fukncii na alternativne riesenie :)
 
 function calc() {
-   Geeks(); min(); max(); avg(); sum(); //rado();
+  Geeks();
+  min();
+  max();
+  avg();
+  sum(); //rado();
 
-  document.querySelector(".result").innerHTML = Geeks();
+  // document.querySelector(".result").innerHTML = Geeks();
   document.querySelector(".min").innerHTML = min();
   document.querySelector(".max").innerHTML = max();
   document.querySelector(".avg").innerHTML = avg();
@@ -110,4 +126,3 @@ function calc() {
   console.log(avg());
   console.log(Geeks());
 }
-

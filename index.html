@@ -10,7 +10,7 @@
     <h1 class="H1">Rado && Maros SuperPOWER</h1>
 
     <section class="section--btn">
-      <button class="btn ">MIN</button>
+      <button class="btn " onclick="randomarr()" >MIN zatial aj random :D</button>
       <button class="btn ">MAX</button>
       <!-- Presunute z dola nahor, aby sa vysledoky zobralovali pod danym tlacidlom -->
       <p class="min vysledok"></p>  
@@ -24,18 +24,18 @@
     </section>
     <section class="section--input">
         <form class="form" action="index.html" method="post">
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" ><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
-            <input  class="input--num"  type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_0_"  type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_1_" type="number" name="array[]" value="" ><br>
+            <input  class="input--num" id="val_2_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_3_"  type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_4_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_5_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_6_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_7_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_8_" type="number" name="array[]" value="" /><br>
+            <input  class="input--num" id="val_9_" type="number" name="array[]" value="" /><br>
             <!-- Si to vratil naspat onclick a nie je tam vylana funkcia calc(), preto mi to nezapisovalo -->
-            <button class="btn btn--submit" type="button" name="button" onclick="Geeks(); min(); max(); avg(); sum(); rado();">
+            <button class="btn btn--submit" type="button" name="button" onclick="calc()">
                 Submit
             </button>
     </section>

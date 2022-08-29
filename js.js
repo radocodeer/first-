@@ -115,7 +115,7 @@ function calc() {
   avg();
   sum(); //rado();
 
-  // document.querySelector(".result").innerHTML = Geeks();
+  document.querySelector(".result").innerHTML = Geeks();
   document.querySelector(".min").innerHTML = min();
   document.querySelector(".max").innerHTML = max();
   document.querySelector(".avg").innerHTML = avg();

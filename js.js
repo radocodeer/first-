@@ -32,18 +32,20 @@ function randomarr() {
   // }
 
   for (let i = 0; i < 10; i++) {
-    zero[i] = newarr[i];
+    document.querySelector("#val_"+i+"_").value = newarr[i];
   }
-  document.querySelector("#val_0_").value = newarr[0];
-  document.querySelector("#val_1_").value = newarr[1];
-  document.querySelector("#val_2_").value = newarr[2];
-  document.querySelector("#val_3_").value = newarr[3];
-  document.querySelector("#val_4_").value = newarr[4];
-  document.querySelector("#val_5_").value = newarr[5];
-  document.querySelector("#val_6_").value = newarr[6];
-  document.querySelector("#val_7_").value = newarr[7];
-  document.querySelector("#val_8_").value = newarr[8];
-  document.querySelector("#val_9_").value = newarr[9];
+
+
+  // document.querySelector("#val_0_").value = newarr[0];
+  // document.querySelector("#val_1_").value = newarr[1];
+  // document.querySelector("#val_2_").value = newarr[2];
+  // document.querySelector("#val_3_").value = newarr[3];
+  // document.querySelector("#val_4_").value = newarr[4];
+  // document.querySelector("#val_5_").value = newarr[5];
+  // document.querySelector("#val_6_").value = newarr[6];
+  // document.querySelector("#val_7_").value = newarr[7];
+  // document.querySelector("#val_8_").value = newarr[8];
+  // document.querySelector("#val_9_").value = newarr[9];
   console.log(zero);
   return newarr;
 }

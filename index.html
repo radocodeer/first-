@@ -12,8 +12,15 @@
     <section class="section--btn">
       <button class="btn ">MIN</button>
       <button class="btn ">MAX</button>
+      <!-- Presunute z dola nahor, aby sa vysledoky zobralovali pod danym tlacidlom -->
+      <p class="min vysledok"></p>  
+      <p class="max vysledok"></p> 
       <button class="btn ">AVG</button>
+      
       <button class="btn ">SUM</button>
+      <!-- Presunute z dola nahor, aby sa vysledoky zobralovali pod danym tlacidlom -->
+      <p class="avg vysledok"></p> 
+      <p class="sum vysledok"></p> 
     </section>
     <section class="section--input">
         <form class="form" action="index.html" method="post">
@@ -27,21 +34,15 @@
             <input  class="input--num"  type="number" name="array[]" value="" /><br>
             <input  class="input--num"  type="number" name="array[]" value="" /><br>
             <input  class="input--num"  type="number" name="array[]" value="" /><br>
+            <!-- Si to vratil naspat onclick a nie je tam vylana funkcia calc(), preto mi to nezapisovalo -->
             <button class="btn btn--submit" type="button" name="button" onclick="Geeks(); min(); max(); avg(); sum(); rado();">
                 Submit
             </button>
     </section>
     <section class="results">
 
-        <p class="result">pole bude zobrazene tu</p>
-        <p>min</p>  
-        <p class="min"></p>  
-        <p>max</p>  
-        <p class="max"></p>  
-        <p>avg</p>  
-        <p class="avg"></p>  
-        <p>sum</p>  
-        <p class="sum"></p>  
+        <p class="result">VYSLEDKY SA ZOBRAZIA HORE POD TLACIDLA MIN MAX AVG SUM</p>
+        
     </section>
 <script src="js.js"></script>
   </body>
